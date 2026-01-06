@@ -1,0 +1,10 @@
+[package]
+name = "proj"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+cargo-parco-proj = { version = "{{PARCO_PROJ_VERSION}}", default-features = false, features = ["macros"] }

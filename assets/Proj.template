@@ -1,0 +1,8 @@
+[config]
+setting = "dev"
+
+[env.base]
+
+[env.dev]
+
+[env.prod]

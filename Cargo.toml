@@ -1,0 +1,26 @@
+[package]
+name = "cargo-parco-proj"
+version = "0.1.0"
+edition = "2024"
+readme = "REAMDE.md"
+license = "MIT"
+description = "Cargo Parco Proj Command"
+repository = "https://github.com/williamcparks/cargo-parco-proj"
+homepage = "https://github.com/williamcparks/cargo-parco-proj"
+keywords = ["parco-proj"]
+
+[features]
+default = ["binary"]
+binary = ["dep:cargo_metadata", "dep:inquire", "dep:pathdiff"]
+macros = ["dep:proc-macro2", "dep:quote", "dep:serde", "dep:syn", "dep:toml"]
+
+[dependencies]
+cargo_metadata = { version = "0.23.1", optional = true }
+inquire = { version = "0.9.1", optional = true }
+pathdiff = { version = "0.2.3", optional = true }
+proc-macro2 = { version = "1.0.104", optional = true }
+quote = { version = "1.0.42", optional = true }
+serde = { version = "1.0.228", optional = true, features = ["derive"] }
+syn = { version = "2.0.113", optional = true }
+thiserror = "2.0.17"
+toml = { version = "0.9.10", optional = true }
