@@ -2,7 +2,7 @@
 name = "cargo-parco-proj"
 version = "0.1.0"
 edition = "2024"
-readme = "REAMDE.md"
+readme = "README.md"
 license = "MIT"
 description = "Cargo Parco Proj Command"
 repository = "https://github.com/williamcparks/cargo-parco-proj"
